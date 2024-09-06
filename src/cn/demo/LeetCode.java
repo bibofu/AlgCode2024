@@ -430,6 +430,55 @@ public class LeetCode {
 
     }
 
+    @Test
+    public void dasdsa(){
+        String s = "Mt2--";
+        String[] strs = s.split("-");
+        System.out.println(strs.length);
+        for(String str:strs){
+            System.out.println(str);
+        }
+
+        Comparator<String> comparator = new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return 0;
+            }
+        };
+
+        Stack<String> stack = new Stack<>();
+        stack.push("dsad");
+        stack.push("dsadds");
+        System.out.println(stack.toString());
+
+    }
+
+    @Test
+    public void dashdsa(){
+        char ch1 ='A';
+        char ch2 = 'z';
+        System.out.println(helperr(ch1,ch2));
+    }
+
+
+
+    public  int helperr(char ch1,char ch2){
+        System.out.println(ch1);
+        System.out.println(ch2);
+        int n1 = (char)ch1;
+        int n2 = (char)ch2;
+        if('A'<= ch1 && ch1<='Z'){
+            n1 = n1 + 100;
+
+        }
+        if('A' <= ch2 && ch2 <= 'Z'){
+            n2 = n2 + 100;
+        }
+        System.out.println(n1);
+        System.out.println(n2);
+        return n1-n2;
+
+    }
 
 
 
